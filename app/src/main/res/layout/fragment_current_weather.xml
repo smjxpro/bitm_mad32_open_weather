@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33ADFF"
+    android:paddingLeft="20sp"
+    android:padding="20sp"
+    tools:context=".CurrentWeatherFragment">
+
+    <!--TextView and Button displayed in First Fragment -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20sp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/cwLocationTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="45sp"
+                android:text="Location"/>
+            <TextView
+                android:id="@+id/cwDateTimeTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="Date/Time"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/cwIconIV"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10sp">
+            <TextView
+                android:id="@+id/cwTempTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Temparature"/>
+            <TextView
+                android:id="@+id/cwDescTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:text="Description"/>
+            <TextView
+                android:id="@+id/cwHumidityTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:text="Humidity"/>
+            <TextView
+                android:id="@+id/cwSunsetSunriseTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:text="Sunset/Sunrise"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

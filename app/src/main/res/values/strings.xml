@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OpenWeather</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="current_weather_api">6ca1b9187423f3972ecfaf7a41f01722</string>
+    <string name="search_hint" >Enter city name</string>
+</resources>
